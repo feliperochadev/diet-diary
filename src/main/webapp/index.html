@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="dietDairy">
+<head>
+    <meta charset="UTF-8">
+    <title>Diet Diary</title>
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-controller="dietDairyController">
+<div class="jumbotron">
+    <div class="panel panel-success">
+    <!-- Default panel contents -->
+        <div class="panel-heading">Diet Diary</div>
+
+    <!-- Table -->
+        <table class="table">
+            <tr>
+                <th>Date</th>
+                <th>Quantity of Meals</th>
+                <th>Quantity of Calories</th>
+            </tr>
+
+
+        </table>
+
+    </div>
+</div>
+
+</body>
+<script src="libs/angular/angular.min.js"></script>
+<script>
+    angular.module("dietDairy", []);
+    angular.module("dietDairy").controller("dietDairyController", function($scope)
+    {
+        $scope.test = "TEST"
+    });
+</script>
+</html>
