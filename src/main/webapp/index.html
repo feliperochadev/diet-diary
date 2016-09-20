@@ -19,6 +19,12 @@
                 <th>Quantity of Meals</th>
                 <th>Quantity of Calories</th>
             </tr>
+            <tr ng-repeat="mealDiary in meals | orderBy:orderByCriterion:orderByDirection">
+                <td>{{mealDiary.date}}</td>
+                <td>{{mealDiary.quantity}}</td>
+                <td>{{mealDiary.calories}}</td>
+            </tr>
+
 
 
         </table>

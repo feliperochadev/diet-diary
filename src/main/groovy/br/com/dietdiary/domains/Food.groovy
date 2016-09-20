@@ -17,5 +17,5 @@ class Food {
     Double calories
     //USA Agricultural Research Service food Id
     @NotNull
-    Long ndbno
+    String ndbno
 }
